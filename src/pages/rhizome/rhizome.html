@@ -11,37 +11,25 @@
 <!-- Active Rhizome Interface Display -->
    <div class="rhizome-row">
      <ion-row >
-        <ion-col class="tall-row">
-          <ion-icon *ngFor="let e of pins1_4"
-          name={{e.icon}}
-          color="{{e.isOn?'danger':'dark'}}"
-          (click)="toggleEquipmentPower(e)"
-          ></ion-icon>
-
-        </ion-col>
-        <ion-col class="rhizome">
-
-          <div>
-            <img src="assets/img/display.png"
-            width="100%">
-          </div>
-
-        </ion-col>
-        <ion-col class="tall-row">
-
-          <ion-icon *ngFor="let e of pins5_6"
-          name={{e.icon}}
-          color="{{e.isOn?'danger':'dark'}}"
-          (click)="toggleEquipmentPower(e)"
-          ></ion-icon>
-            <!-- <ion-icon name="power"
-               class="in-context-power"
-               color="danger"></ion-icon> -->
-           <!-- <label>light</label> -->
-
-
-        </ion-col>
+        <!-- <ion-col *ngFor="let p of pins1_2">
+          <ion-item>
+            <ion-icon
+              name="{{p.icon}}"
+              color="{{p.isOn? 'danger':'dark'}}">
+            </ion-icon>
+            {{p.name}}
+            <ion-toggle checked="{{p.isOn}}"></ion-toggle>
+          </ion-item>
+        </ion-col> -->
       </ion-row>
+      <ion-row >
+         <ion-col>
+         </ion-col>
+       </ion-row>
+       <ion-row >
+          <ion-col>
+          </ion-col>
+        </ion-row>
    </div>
 
 <!-- Temperature HUD -->

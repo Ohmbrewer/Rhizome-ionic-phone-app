@@ -9,14 +9,13 @@ import { Temperature } from "../../interfaces/temperature.interface";
   templateUrl: 'rhizome.html'
 })
 export class RhizomePage {
-  pins1_4: Equipment[]= [{name:"Drain Valve", icon:"cog", isOn:false},
+  pins1_2: Equipment[]= [{name:"Drain Valve", icon:"cog", isOn:false},
                         {name:"Coolant Pump", icon:"snow", isOn:false},
-                        {name:"Tank Heating Element", icon:"flame", isOn:true},
-                        {name:"TempPin", icon:"thermometer", isOn:false}];
-  pins5_6: Equipment[]= [{name:"Drain Pump", icon:"cog", isOn:false},
-                        {name:"n/a", icon:"infinite", isOn:false},
-                        {name:"n/a", icon:"infinite", isOn:false},
+                        ];
+  pins3_4: Equipment[]= [{name:"n/a", icon:"infinite", isOn:false},
                         {name:"Brewery Light", icon:"bulb", isOn:true}];
+  pins5_6: Equipment[]= [{name:"Tank Heating Element", icon:"flame", isOn:true},
+                        {name:"TempPin", icon:"thermometer", isOn:false}];
   temps: Temperature[] = [{name:"Column", temp:68, isCelcius:true},
                           {name:"Tank", temp:96, isCelcius:true}];
   targetTemps: Temperature[] = [{name:"Column", temp:78, isCelcius:true},
