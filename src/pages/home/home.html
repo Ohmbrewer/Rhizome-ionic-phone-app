@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ohmbrewer
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  List of your Rhizomes
+  <ion-list>
+    <ion-item *ngFor="let r of myRhizomes"
+    (click)="openRhizomePage()">
+        <ion-avatar item-left>
+          <img src="assets/img/rhizome-preview.jpeg">
+        </ion-avatar>
+        <h2>{{r.name}}</h2>
+        <p>{{r.discription}}</p>
+      </ion-item>
+  </ion-list>
+
+  <ion-fab right bottom>
+    <button ion-fab color="primary"
+      (click)="fabClick()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+      <ion-fab-list side="top">
+
+        <button ion-fab >
+          <ion-icon name="beer">
+          </ion-icon>
+        </button>
+
+        <button ion-fab
+        >
+          <ion-icon name="cube">
+          </ion-icon>
+        </button>
+
+        <button ion-fab
+        >
+          <ion-icon name="leaf">
+          </ion-icon>
+        </button>
+
+      </ion-fab-list>
+    </ion-fab>
+    <div class="labelContainer" *ngIf="showMenuItem">
+    	<div class="container">
+        <a (click)="action1"><div class="label">Add a new Rhizome</div></a>
+      	<a (click)="action2"><div class="label">Add a HOPS unit</div></a>
+        <a (click)="action2"><div class="label">drink another beer</div></a>
+    	</div>
+  	</div>`
+</ion-content>

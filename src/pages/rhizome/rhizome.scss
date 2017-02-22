@@ -1,0 +1,71 @@
+page-rhizome {
+  .rhizome-row {
+      ion-icon.in-context-power {
+        font-size: 10px;
+        position: absolute;
+        right: 6px;
+        top: 10px;
+      }
+
+      ion-icon {
+        font-size: 40px;
+      }
+      ion-col.tall-row {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        padding: 10px 30px;
+        position: relative;
+        align-items: center;
+      }
+      ion-row {
+        height: 100%;
+        flex-wrap: wrap;
+      }
+      ion-col.rhizome {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        padding: 10px 0px;
+        position: relative;
+      }
+      ion-col {
+        flex: 0 0 25%;
+        max-width: 33%;
+        text-align: center;
+        padding: 10px 2px;
+        position: relative;
+      }
+      label{
+        display: block;
+      }
+    }
+    .rhizome-top-row {
+        ion-icon.in-context-power {
+          font-size: 5px;
+          position: absolute;
+          right: 6px;
+          top: 10px;
+        }
+
+        ion-icon {
+          font-size: 40px;
+        }
+
+        ion-row {
+          height: 100%;
+          flex-wrap: wrap;
+        }
+
+        ion-col {
+          flex: 0 0 25%;
+          max-width: 25%;
+          text-align: center;
+          padding: 0px 30px;
+          position: relative;
+        }
+        label{
+          display: block;
+        }
+      }
+}

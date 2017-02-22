@@ -1,0 +1,57 @@
+page-home {
+  .container{
+  		  position: absolute;
+  		  bottom: $fab-content-margin * 3.4 + $fab-size;
+  		  right: 20%;
+
+  		  .label{
+  			font-family: Corbel;
+  			text-align: right;
+  			color:white;
+  			background: #292929;
+  			-webkit-border-radius: 10px;
+  			-moz-border-radius: 10px;
+  			border-radius: 10px;
+  			padding: 7px;
+  			width:220px;
+  			margin-top: ($fab-list-margin * 2.5);
+  			margin-right: 0px;
+  			box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+  		  }
+  		}
+
+    .toolbar-background {
+      background: #fff;
+      border-color: transparent;
+    }
+
+    .slide-zoom {
+      height: 100%;
+    }
+
+    .slide-title {
+      margin-top: 2.8rem;
+    }
+
+    .slide-image {
+      max-height: 50%;
+      max-width: 60%;
+      margin: 18px 0;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #60646B;
+
+      b {
+        color: #000000;
+      }
+    }
+    
+}
