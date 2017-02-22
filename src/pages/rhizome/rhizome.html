@@ -11,23 +11,82 @@
 <!-- Active Rhizome Interface Display -->
    <div class="rhizome-row">
      <ion-row >
-        <!-- <ion-col *ngFor="let p of pins1_2">
-          <ion-item>
-            <ion-icon
-              name="{{p.icon}}"
-              color="{{p.isOn? 'danger':'dark'}}">
+       <ion-col></ion-col>
+        <ion-col *ngFor="let p of pins1_2">
+
+          <ion-icon
+            name="{{p.icon}}"
+            >
+            <ion-icon class="in-context-power"
+              name="power"
+              color="{{p.isOn? 'danger':'dark'}}"
+              (click)="toggleEquipmentPower(p)">
             </ion-icon>
-            {{p.name}}
-            <ion-toggle checked="{{p.isOn}}"></ion-toggle>
-          </ion-item>
-        </ion-col> -->
+
+            <label>{{p.name}}</label>
+            <label class="in-context-pin" color="dark">{{p.pin}}:</label>
+          </ion-icon>
+          <!-- <ion-toggle class="in-context-power"
+          checked="{{p.isOn}}"
+          color="danger"
+          (click)="toggleEquipmentPower(p)">
+          </ion-toggle> -->
+
+
+        </ion-col>
       </ion-row>
       <ion-row >
-         <ion-col>
+        <ion-col></ion-col>
+         <ion-col *ngFor="let p of pins3_4">
+
+           <ion-icon
+             name="{{p.icon}}"
+             >
+             <!-- <ion-icon class="in-context-power"
+               name="power"
+               color="{{p.isOn? 'danger':'dark'}}"
+               (click)="toggleEquipmentPower(p)">
+             </ion-icon> -->
+             <ion-icon class="in-context-link"
+               name="git-compare"
+               color="primary"
+               (click)="toggleEquipmentPower(p)">
+             </ion-icon>
+             <ion-toggle class="in-context-power"
+             checked="{{p.isOn}}"
+             color="danger"
+             (click)="toggleEquipmentPower(p)">
+             </ion-toggle>
+             <label>{{p.name}}</label>
+             <label class="in-context-pin" color="dark">{{p.pin}}:</label>
+           </ion-icon>
+
+
+
          </ion-col>
-       </ion-row>
-       <ion-row >
-          <ion-col>
+       </ion-row><ion-row >
+         <ion-col></ion-col>
+          <ion-col *ngFor="let p of pins5_6">
+
+            <ion-icon
+              name="{{p.icon}}"
+              >
+              <ion-icon class="in-context-power"
+                name="power"
+                color="{{p.isOn? 'danger':'dark'}}"
+                (click)="toggleEquipmentPower(p)">
+              </ion-icon>
+
+              <label>{{p.name}}</label>
+              <label class="in-context-pin" color="dark">{{p.pin}}:</label>
+            </ion-icon>
+            <!-- <ion-toggle class="in-context-power"
+            checked="{{p.isOn}}"
+            color="danger"
+            (click)="toggleEquipmentPower(p)">
+            </ion-toggle> -->
+
+
           </ion-col>
         </ion-row>
    </div>

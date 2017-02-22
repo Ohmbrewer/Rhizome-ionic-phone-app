@@ -1,14 +1,31 @@
 page-rhizome {
   .rhizome-row {
       ion-icon.in-context-power {
-        font-size: 10px;
+        font-size: 20px;
         position: absolute;
         right: 6px;
         top: 10px;
       }
-
+      ion-toggle.in-context-power {
+        font-size: 20px;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+      }
+      label.in-context-pin {
+        font-size: 10px;
+        position: absolute;
+        left: 6px;
+        top: 10px;
+      }
+      ion-icon.in-context-link {
+        font-size: 20px;
+        position: absolute;
+        right: 6px;
+        bottom: 20px;
+      }
       ion-icon {
-        font-size: 40px;
+        font-size: 50px;
       }
 
       ion-row {
@@ -17,7 +34,7 @@ page-rhizome {
       }
 
       ion-col {
-        flex: 0 0 50%;
+        flex: 0 0 25%;
         max-width: 50%;
         text-align: center;
         padding: 10px 2px;
@@ -25,6 +42,7 @@ page-rhizome {
       }
       label{
         display: block;
+        font-size: 10px;
       }
     }
 
