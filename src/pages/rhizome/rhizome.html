@@ -11,46 +11,119 @@
 <!-- Active Rhizome Interface Display -->
    <div class="rhizome-row">
      <ion-row >
-       <ion-col></ion-col>
-        <ion-col *ngFor="let p of pins1_2">
+       <!-- <ion-col></ion-col> -->
+       <ion-col >
+
+         <ion-icon
+           name="{{pin1.icon}}"
+           >
+           <ion-icon class="in-context-power-left"
+             name="power"
+             color="{{pin1.isOn? 'danger':'dark'}}"
+             (click)="toggleEquipmentPower(pin1)">
+           </ion-icon>
+           <ion-icon class="in-context-link"
+             name="ios-link"
+             color="secondary">
+           </ion-icon>
+           <label>{{pin1.name}}</label>
+
+         </ion-icon>
+         <!-- <ion-toggle class="in-context-power"
+         checked="{{pin1.isOn}}"
+         color="danger"
+         (click)="toggleEquipmentPower(pin1)">
+         </ion-toggle> -->
+         <label class="in-context-pin-right" color="dark">({{pin1.pin}})</label>
+
+       </ion-col>
+        <ion-col>
 
           <ion-icon
-            name="{{p.icon}}"
+            name="{{pin2.icon}}"
             >
             <ion-icon class="in-context-power"
               name="power"
-              color="{{p.isOn? 'danger':'dark'}}"
-              (click)="toggleEquipmentPower(p)">
+              color="{{pin2.isOn? 'danger':'dark'}}"
+              (click)="toggleEquipmentPower(pin2)">
             </ion-icon>
 
-            <label>{{p.name}}</label>
-            <label class="in-context-pin" color="dark">{{p.pin}}:</label>
-          </ion-icon>
-          <!-- <ion-toggle class="in-context-power"
-          checked="{{p.isOn}}"
-          color="danger"
-          (click)="toggleEquipmentPower(p)">
-          </ion-toggle> -->
+            <label>{{pin2.name}}</label>
 
+          </ion-icon>
+          <!-- <ion-toggle class="in-context-power-left"
+          checked="{{pin2.isOn}}"
+          color="danger"
+          (click)="toggleEquipmentPower(pin2)">
+          </ion-toggle> -->
+          <label class="in-context-pin" color="dark">({{pin2.pin}})</label>
 
         </ion-col>
       </ion-row>
       <ion-row >
-        <ion-col></ion-col>
-         <ion-col *ngFor="let p of pins3_4">
+        <ion-col >
+
+          <ion-icon
+            name="{{pin3.icon}}"
+            >
+            <ion-icon class="in-context-power-left"
+              name="power"
+              color="{{pin3.isOn? 'danger':'dark'}}"
+              (click)="toggleEquipmentPower(pin3)">
+            </ion-icon>
+            <ion-icon class="in-context-link"
+
+              name="timer"
+              color="secondary">
+            </ion-icon>
+            <label>{{pin3.name}}</label>
+
+          </ion-icon>
+          <!-- <ion-toggle class="in-context-power"
+          checked="{{pin1.isOn}}"
+          color="danger"
+          (click)="toggleEquipmentPower(pin1)">
+          </ion-toggle> -->
+          <label class="in-context-pin-right" color="dark">({{pin3.pin}})</label>
+
+        </ion-col>
+         <ion-col>
+
+           <ion-icon
+             name="{{pin4.icon}}"
+             >
+             <ion-icon class="in-context-power"
+               name="power"
+               color="{{pin4.isOn? 'danger':'dark'}}"
+               (click)="toggleEquipmentPower(pin4)">
+             </ion-icon>
+
+             <label>{{pin4.name}}</label>
+
+           </ion-icon>
+           <!-- <ion-toggle class="in-context-power-left"
+           checked="{{pin2.isOn}}"
+           color="danger"
+           (click)="toggleEquipmentPower(pin2)">
+           </ion-toggle> -->
+           <label class="in-context-pin" color="dark">({{pin4.pin}})</label>
+
+         </ion-col>
+        <!-- <ion-col></ion-col> -->
+         <!-- <ion-col *ngFor="let p of pins3_4">
 
            <ion-icon
              name="{{p.icon}}"
              >
-             <!-- <ion-icon class="in-context-power"
+             <ion-icon class="in-context-power"
                name="power"
                color="{{p.isOn? 'danger':'dark'}}"
                (click)="toggleEquipmentPower(p)">
-             </ion-icon> -->
+             </ion-icon>
              <ion-icon class="in-context-link"
-               name="git-compare"
-               color="primary"
-               (click)="toggleEquipmentPower(p)">
+               name="ios-link"
+               mode="ios"
+               color="secondary">
              </ion-icon>
              <ion-toggle class="in-context-power"
              checked="{{p.isOn}}"
@@ -63,10 +136,57 @@
 
 
 
-         </ion-col>
+         </ion-col> -->
        </ion-row><ion-row >
-         <ion-col></ion-col>
-          <ion-col *ngFor="let p of pins5_6">
+         <ion-col >
+
+           <ion-icon
+             name="{{pin5.icon}}"
+             >
+             <ion-icon class="in-context-power-left"
+               name="power"
+               color="{{pin5.isOn? 'danger':'dark'}}"
+               (click)="toggleEquipmentPower(pin5)">
+             </ion-icon>
+             <ion-icon class="in-context-link"
+               name="time"
+               color="secondary">
+             </ion-icon>
+             <label>{{pin5.name}}</label>
+
+           </ion-icon>
+           <!-- <ion-toggle class="in-context-power"
+           checked="{{pin1.isOn}}"
+           color="danger"
+           (click)="toggleEquipmentPower(pin1)">
+           </ion-toggle> -->
+           <label class="in-context-pin-right" color="dark">({{pin5.pin}})</label>
+
+         </ion-col>
+          <ion-col>
+
+            <ion-icon
+              name="{{pin6.icon}}"
+              >
+              <ion-icon class="in-context-power"
+                name="power"
+                color="{{pin6.isOn? 'danger':'dark'}}"
+                (click)="toggleEquipmentPower(pin6)">
+              </ion-icon>
+
+              <label>{{pin6.name}}</label>
+
+            </ion-icon>
+            <!-- <ion-toggle class="in-context-power-left"
+            checked="{{pin2.isOn}}"
+            color="danger"
+            (click)="toggleEquipmentPower(pin2)">
+            </ion-toggle> -->
+            <label class="in-context-pin" color="dark">({{pin6.pin}})</label>
+
+          </ion-col>
+         <!-- <ion-col></ion-col> -->
+          <!-- <ion-col *ngFor="let p of pins5_6">
 
             <ion-icon
               name="{{p.icon}}"
@@ -80,14 +200,14 @@
               <label>{{p.name}}</label>
               <label class="in-context-pin" color="dark">{{p.pin}}:</label>
             </ion-icon>
-            <!-- <ion-toggle class="in-context-power"
+            <ion-toggle class="in-context-power"
             checked="{{p.isOn}}"
             color="danger"
             (click)="toggleEquipmentPower(p)">
-            </ion-toggle> -->
+            </ion-toggle>
 
 
-          </ion-col>
+          </ion-col> -->
         </ion-row>
    </div>
 

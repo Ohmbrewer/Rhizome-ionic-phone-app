@@ -1,9 +1,15 @@
 page-rhizome {
   .rhizome-row {
       ion-icon.in-context-power {
-        font-size: 20px;
+        font-size: 30px;
         position: absolute;
-        right: 6px;
+        right: 10px;
+        top: 10px;
+      }
+      ion-icon.in-context-power-left {
+        font-size: 30px;
+        position: absolute;
+        left: 10px;
         top: 10px;
       }
       ion-toggle.in-context-power {
@@ -12,17 +18,29 @@ page-rhizome {
         right: 0px;
         top: 10px;
       }
+      ion-toggle.in-context-power-left {
+        font-size: 20px;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+      }
       label.in-context-pin {
         font-size: 10px;
         position: absolute;
-        left: 6px;
-        top: 10px;
+        left: 20px;
+        top: 30px;
+      }
+      label.in-context-pin-right {
+        font-size: 10px;
+        position: absolute;
+        right: 20px;
+        top: 30px;
       }
       ion-icon.in-context-link {
-        font-size: 20px;
+        font-size: 30px;
         position: absolute;
-        right: 6px;
-        bottom: 20px;
+        left: 60px;
+        bottom: 25px;
       }
       ion-icon {
         font-size: 50px;
@@ -34,7 +52,7 @@ page-rhizome {
       }
 
       ion-col {
-        flex: 0 0 25%;
+        flex: 0 0 50%;
         max-width: 50%;
         text-align: center;
         padding: 10px 2px;
